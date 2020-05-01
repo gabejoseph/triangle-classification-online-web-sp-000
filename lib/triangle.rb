@@ -12,7 +12,9 @@ class Triangle
   end 
 
   def kind 
+    binding.pry
     if a == 0 || (a||b||c) < 0
+      
       begin
         raise TriangleError
       end
