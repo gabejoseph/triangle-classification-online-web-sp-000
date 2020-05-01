@@ -13,6 +13,9 @@ class Triangle
 
   def kind 
     if a == 0 || 
+      begin
+        raise TriangleError
+      end
       
     elsif a == b && a == c && b == c
       return :equilateral 
