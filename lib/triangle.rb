@@ -12,7 +12,9 @@ class Triangle
   end 
 
   def kind 
-    if a == b && a == c && b == c
+    if a == 0 || 
+      
+    elsif a == b && a == c && b == c
       return :equilateral 
     elsif (a == b) && (a != c)
       :isosceles
@@ -22,10 +24,6 @@ class Triangle
       :isosceles
     elsif (b != c) && (a != c) && (b != a)
       :scalene 
-    else 
-      begin
-        raise TriangleError
-      end 
     end
   end
         
