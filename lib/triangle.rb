@@ -12,7 +12,7 @@ class Triangle
   end 
 
   def kind 
-    if a == 0 || (a||b||c) < 0 || 
+    if a == 0 || (a||b||c) < 0
       begin
         raise TriangleError
       end
